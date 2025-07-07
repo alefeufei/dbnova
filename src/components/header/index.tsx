@@ -1,16 +1,15 @@
 import Image from "next/image";
+import { Slide } from '../../components/slide';
 
 export function Header() {
   return (
     <header className="bg-white shadow-md p-6">
       <nav className="flex justify-between items-center">
-      
         <div>
           <Image src="/logo.png" alt="DBNova Logo" width={150} height={50} />
+          
         </div>
-
-       
-        <ul className="flex space-x-6">
+        <ul className="flex space-x-6 font-bold">
           <li>
             <a href="/">Home</a>
           </li>
@@ -34,6 +33,7 @@ export function Header() {
           </li>
         </ul>
       </nav>
+      {/* <Slide/> */}
     </header>
   );
 }
