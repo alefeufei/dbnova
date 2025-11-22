@@ -11,23 +11,18 @@ export function Slide() {
     {
       id: 1,
       url: "https://dbnova.com.br/wp-content/uploads/2020/09/bg-novo.jpg",
-      alt: "Slide 1"
+      alt: "Slide 1",
     },
     {
       id: 2,
-      url: "https://picsum.photos/id/1016/1200/650",
-      alt: "Slide 2"
+      url: "https://dbnova.com.br/wp-content/uploads/2020/08/bg_DBNova_Siafic-e1751938243813.jpeg",
+      alt: "Slide 2",
     },
     {
       id: 3,
-      url: "https://picsum.photos/id/1018/1200/650",
-      alt: "Slide 3"
+      url: "https://dbnova.com.br/wp-content/uploads/2021/12/model_5_.jpg",
+      alt: "Slide 3",
     },
-    {
-      id: 4,
-      url: "https://picsum.photos/id/1020/1200/650",
-      alt: "Slide 4"
-    }
   ];
   const totalSlides = slides.length;
 

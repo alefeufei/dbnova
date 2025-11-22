@@ -1,39 +1,79 @@
 import Image from "next/image";
-import { Slide } from '../../components/slide';
+import Link from "next/link";
 
 export function Header() {
   return (
     <header className="bg-white shadow-md p-6">
       <nav className="flex justify-between items-center">
-        <div>
-          <Image src="/logo.png" alt="DBNova Logo" width={150} height={50} />
-          
-        </div>
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/logo.png"
+            alt="DBNova Logo"
+            width={150}
+            height={50}
+            priority
+          />
+        </Link>
+
         <ul className="flex space-x-6 font-bold">
           <li>
-            <a href="/">Home</a>
+            <Link
+              href="/"
+              className="hover:text-green-600 transition-colors"
+            >
+              Home
+            </Link>
           </li>
           <li>
-            <a href="/solucoes">Soluções</a>
+            <Link
+              href="/solucoes"
+              className="hover:text-green-600 transition-colors"
+            >
+              Soluções
+            </Link>
           </li>
           <li>
-            <a href="/quemsomos">Quem Somos</a>
+            <Link
+              href="/quemsomos"
+              className="hover:text-green-600 transition-colors"
+            >
+              Quem Somos
+            </Link>
           </li>
           <li>
-            <a href="/novidades">Novidades</a>
+            <Link
+              href="/novidades"
+              className="hover:text-green-600 transition-colors"
+            >
+              Novidades
+            </Link>
           </li>
           <li>
-            <a href="/trabalheconosco">Trabalhe Conosco</a>
+            <Link
+              href="/trabalheconosco"
+              className="hover:text-green-600 transition-colors"
+            >
+              Trabalhe Conosco
+            </Link>
           </li>
           <li>
-            <a href="/suporte">Suporte</a>
+            <Link
+              href="/suporte"
+              className="hover:text-green-600 transition-colors"
+            >
+              Suporte
+            </Link>
           </li>
           <li>
-            <a href="/contato">Contato</a>
+            <Link
+              href="/contato"
+              className="hover:text-green-600 transition-colors"
+            >
+              Contato
+            </Link>
           </li>
         </ul>
       </nav>
-      {/* <Slide/> */}
     </header>
   );
 }
